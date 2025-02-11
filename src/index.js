@@ -23,7 +23,7 @@ app.use('/api/bookings', bookingLimiter);
 
 app.get('/', (req, res) => {
     res.json({
-        message: "Welcome to BookMyRail API!",
+        message: "Welcome to book-my-rail API!",
         endpoints: {
             users: {
                 register: "POST /api/users/register",
