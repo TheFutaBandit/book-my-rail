@@ -64,17 +64,23 @@ node src/index.js
 "endpoints": 
 "users": 
     "register": "POST /api/users/register", --- To Register the user/admin
+
     "login": "POST /api/users/login" --- To Login the user/admin
 
 "trains": 
     "getAvailability": "GET /api/trains/availability", --- check train availability (user/admin)
+
     "addTrain": "POST /api/trains (Admin)", --- add trains (admin)
+
     "updateSeats": "PATCH /api/trains/:id/seats (Admin)", --- update seats in a train (admin)
+
     "deleteTrain": "DELETE /api/trains/:id (Admin)" --- delete a train (admin)
 
 "bookings": 
     "createBooking": "POST /api/bookings", --- create booking (user/admin)
+
     "getBookingDetails": "GET /api/bookings/:id" --- get booking details (user/admin)
+    
 
 
 
