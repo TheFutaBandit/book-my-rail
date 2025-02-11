@@ -93,26 +93,36 @@ node src/index.js
 
 ## TO TEST THE API
 --Register the user
+```bash
 curl -X POST http://localhost:3000/api/users/register \
 -H "Content-Type: application/json" \
 -d '{"username":"testuser", "password":"testpass"}'
+```
 
 --Login the user
+```bash
 curl -X POST http://localhost:3000/api/users/register \
 -H "Content-Type: application/json" \
 -d '{"username":"testuser", "password":"testpass"}'
+```
 
 --Add a train(Admin)
+```bash
 curl -X POST http://localhost:3000/api/trains \
 -H "Content-Type: application/json" \
 -H "x-api-key: your_admin_api_key" \
 -d '{"name":"Express 123", "source":"Delhi", "destination":"Mumbai", "total_seats":100}'
+```
 
 --check availability 
+```bash
 curl "http://localhost:3000/api/trains/availability?source=Delhi&destination=Mumbai"'
+```
 
 --Book a seat
+```bash
 curl -X POST http://localhost:3000/api/trains \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer your_jwt_token" \
 -d '{"train_id":1}'
+```
